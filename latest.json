@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-09T00:04:15Z",
+  "generated_at": "2026-07-12T13:08:11Z",
   "source_url": "https://openrouter.ai/rankings",
   "image": "latest.png",
   "markdown": "latest.md",
   "json": "latest.json",
   "width": 1280,
   "height": 1220,
-  "sha256": "627b865024c8a97a422062cc73b25bfe02b721dc3721b6e8e06b87af179ca2fd",
-  "size_bytes": 154219
+  "sha256": "4668e81183de5144922327b70ac3f8b6b6c5300329450244ff052f75d26c8937",
+  "size_bytes": 153756
 }
