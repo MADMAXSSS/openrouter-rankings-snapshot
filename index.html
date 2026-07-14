@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenRouter Rankings Snapshot</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; line-height: 1.5; }
+    img { max-width: 100%; border: 1px solid #ddd; border-radius: 8px; }
+    code { background: #f5f5f5; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>OpenRouter Rankings Snapshot</h1>
+  <p>
+    Files:
+    <a href="./latest.png">latest.png</a> /
+    <a href="./latest.md">latest.md</a> /
+    <a href="./latest.json">latest.json</a>
+  </p>
+  <p id="meta">Loading metadata...</p>
+  <img src="./latest.png" alt="OpenRouter rankings snapshot" />
+  <script>
+    fetch('./latest.json?ts=' + Date.now())
+      .then(r => r.json())
+      .then(j => {
+        document.getElementById('meta').innerHTML =
+          'Generated at: <code>' + j.generated_at + '</code><br>' +
+          'Size: <code>' + j.width + ' × ' + j.height + '</code>';
+      })
+      .catch(e => {
+        document.getElementById('meta').textContent = 'Metadata load failed: ' + e;
+      });
+  </script>
+</body>
+</html>
