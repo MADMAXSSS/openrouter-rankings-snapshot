@@ -1,6 +1,6 @@
 # OpenRouter Rankings Snapshot
 
-Generated at: 2026-09-17T00:02:27Z
+Generated at: 2026-10-15T00:00:19Z
 
 Source: https://openrouter.ai/rankings
 
